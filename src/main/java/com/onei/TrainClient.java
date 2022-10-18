@@ -21,12 +21,9 @@ public class TrainClient extends WebServiceGatewaySupport {
     public ArrayOfObjStationData getStationByCode(String stationCode) {
 
         GetAllStationsXMLResponse getAllStationsXMLResponse = new GetAllStationsXMLResponse();
-        GetAllStationsXML
-        getAllStationsXMLResponse.setGetAllStationsXMLResult();
         ObjStation request = new ObjStation();
         request.setStationCode(stationCode);
         ArrayOfObjStationData arrayOfObjStationData = new ArrayOfObjStationData();
-        arrayOfObjStationData.
 
         log.info("Requesting location for " + stationCode);
 
