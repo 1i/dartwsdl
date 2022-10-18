@@ -17,13 +17,12 @@ public class Main {
     @Bean
     CommandLineRunner lookup(TrainClient trainClient) {
         return args -> {
-            String country = "SKILL";
+            String stationCode = "SKILL";
 
             if (args.length > 0) {
-                country = args[0];
+                stationCode = args[0];
             }
-            ArrayOfObjStationData station = trainClient.getStationByCode(country);
-            System.out.println(station);
+            System.out.println(trainClient.getStationByCode(stationCode));
         };
     }
 }
