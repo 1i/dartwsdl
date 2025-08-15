@@ -17,6 +17,7 @@ public class Main {
     @Bean
     CommandLineRunner lookup(TrainClient trainClient) {
         return args -> {
+            // station code for Shankill
             String stationCode = "SKILL";
 
             if (args.length > 0) {
